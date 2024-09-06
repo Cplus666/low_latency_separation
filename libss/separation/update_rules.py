@@ -83,7 +83,8 @@ def _ip_1(cov, demix, row_idx):
     n_src = cov.shape[-1]
 
     # shape: (n_freq, n_src, n_src)
-    w = (np.linalg.solve(demix @ cov[row_idx], np.eye(n_src)[None, :, row_idx])).conj()
+    w = (np.linalg.solve(demix @ cov[row_idx,...], np.eye(n_src)[None, :, [row_idx]])).conj()
+    w = w[..., 0]
     denom = (w[:, None, :] @ cov[row_idx]) @ w[:, :, None].conj()
     demix[:, row_idx, :] = w / np.sqrt(denom[:, :, 0])
 
