@@ -11,6 +11,7 @@ The output files will be saved in "save_wav" directory
 ## Citation
 If you find this work useful, please cite it in your research:
 
+```
 @inproceedings{chua2024an,
   title={An Effective MVDR Post-Processing Method For Low-Latency Convolutive Blind Source Separation},
   author={Chua, Jiawen and Yan, Longfei Felix and Kleijn, W Bastiaan},
@@ -18,6 +19,7 @@ If you find this work useful, please cite it in your research:
   year={2024},
   organization={IEEE}
 }
+```
 
 ## Acknowledgements
 This implementation builds on the **Weighted Prediction Error (WPE)** and **Auxiliary Function Independent Vector Analysis (AuxIVA)** methods for blind source separation.
