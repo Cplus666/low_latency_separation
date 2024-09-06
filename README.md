@@ -4,7 +4,7 @@ This repository implements a low-latency blind source separation system using th
 ## Usage
 To run the blind source separation algorithm:
 
-\code{python main_offline_implementation.py}
+```python main_offline_implementation.py```
 
 The output files will be saved in "save_wav" directory
 
